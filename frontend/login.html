@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - TeamWork</title>
+  <link rel="stylesheet" href="css/enhanced.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">TeamWork</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="feed.html">Feed</a></li>
+      <li><a href="login.html" class="active">Login</a></li>
+      <li><a href="signup.html" class="btn primary">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- LOGIN FORM -->
+  <div class="form-container">
+    <h2 style="text-align: center; margin-bottom: 8px;">Welcome Back 👋</h2>
+    <p style="text-align: center; color: var(--gray); margin-bottom: 32px;">Sign in to your TeamWork account</p>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="you@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" placeholder="••••••••" required />
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <label style="display: flex; align-items: center; gap: 8px; font-size: 14px;">
+          <input type="checkbox" style="cursor: pointer;" /> Remember me
+        </label>
+        <a href="#" style="color: var(--primary); font-weight: 600; text-decoration: none;">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn primary" style="width: 100%;">Sign In</button>
+    </form>
+
+    <div class="form-footer" style="margin-top: 32px;">
+      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+
+    <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center;">
+      <p style="color: var(--gray); font-size: 14px; margin-bottom: 16px;">Or continue with</p>
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <button style="width: 48px; height: 48px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center;">🔵</button>
+        <button style="width: 48px; height: 48px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center;">🔴</button>
+        <button style="width: 48px; height: 48px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); cursor: pointer; font-size: 20px; display: flex; align-items: center; justify-content: center;">🐙</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TeamWork</h3>
+        <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">Build together. Show work. Get hired.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Product</h3>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Teams</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 TeamWork. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasks - TeamWork</title>
+  <link rel="stylesheet" href="css/enhanced.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">TeamWork</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="feed.html">Feed</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html" class="btn primary">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- TASKS PAGE -->
+  <div style="padding: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
+        <div>
+          <h2>Team Tasks ✅</h2>
+          <p style="color: var(--gray); margin: 0;">Manage and track your team's work</p>
+        </div>
+        <button class="btn primary">+ New Task</button>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div style="display: flex; gap: 8px; margin-bottom: 32px; border-bottom: 1px solid var(--border); padding-bottom: 0;">
+        <button style="padding: 12px 16px; border: none; background: none; cursor: pointer; border-bottom: 3px solid var(--primary); color: var(--primary); font-weight: 600;">All (15)</button>
+        <button style="padding: 12px 16px; border: none; background: none; cursor: pointer; color: var(--gray);">Pending (5)</button>
+        <button style="padding: 12px 16px; border: none; background: none; cursor: pointer; color: var(--gray);">In Progress (6)</button>
+        <button style="padding: 12px 16px; border: none; background: none; cursor: pointer; color: var(--gray);">Completed (4)</button>
+      </div>
+
+      <!-- TASKS LIST -->
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <!-- TASK 1 -->
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;" class="task-card">
+          <div style="flex: 1;">
+            <div style="display: flex; gap: 12px; align-items: start;">
+              <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer; accent-color: var(--primary);" />
+              <div>
+                <h3 style="margin: 0 0 6px 0; font-size: 16px;">Payment Module Integration</h3>
+                <p style="color: var(--gray); font-size: 14px; margin: 0;">Integrate Stripe payment gateway into checkout flow</p>
+                <div style="display: flex; gap: 8px; margin-top: 12px;">
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">Backend</span>
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">High Priority</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div style="background: #fef08a; color: #92400e; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 8px;">In Progress</div>
+            <div style="font-size: 12px; color: var(--gray);">Assigned to: Sarah Miller</div>
+            <div style="font-size: 12px; color: var(--gray);">Due: Feb 15, 2026</div>
+          </div>
+        </div>
+
+        <!-- TASK 2 -->
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;" class="task-card">
+          <div style="flex: 1;">
+            <div style="display: flex; gap: 12px; align-items: start;">
+              <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer; accent-color: var(--primary);" />
+              <div>
+                <h3 style="margin: 0 0 6px 0; font-size: 16px;">API Response Optimization</h3>
+                <p style="color: var(--gray); font-size: 14px; margin: 0;">Reduce API response time from 500ms to 100ms</p>
+                <div style="display: flex; gap: 8px; margin-top: 12px;">
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">Backend</span>
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">Performance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div style="background: #dbeafe; color: #0c4a6e; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 8px;">Pending</div>
+            <div style="font-size: 12px; color: var(--gray);">Assigned to: Mike Chen</div>
+            <div style="font-size: 12px; color: var(--gray);">Due: Feb 20, 2026</div>
+          </div>
+        </div>
+
+        <!-- TASK 3 -->
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;" class="task-card">
+          <div style="flex: 1;">
+            <div style="display: flex; gap: 12px; align-items: start;">
+              <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer; accent-color: var(--primary);" />
+              <div>
+                <h3 style="margin: 0 0 6px 0; font-size: 16px;">User Authentication System</h3>
+                <p style="color: var(--gray); font-size: 14px; margin: 0;">Implement JWT-based authentication with refresh tokens</p>
+                <div style="display: flex; gap: 8px; margin-top: 12px;">
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">Backend</span>
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">Security</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div style="background: #d1fae5; color: #065f46; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 8px;">Completed</div>
+            <div style="font-size: 12px; color: var(--gray);">Assigned to: John Doe</div>
+            <div style="font-size: 12px; color: var(--gray);">Due: Feb 8, 2026</div>
+          </div>
+        </div>
+
+        <!-- TASK 4 -->
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;" class="task-card">
+          <div style="flex: 1;">
+            <div style="display: flex; gap: 12px; align-items: start;">
+              <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer; accent-color: var(--primary);" />
+              <div>
+                <h3 style="margin: 0 0 6px 0; font-size: 16px;">React Dashboard UI</h3>
+                <p style="color: var(--gray); font-size: 14px; margin: 0;">Create responsive dashboard with charts and analytics</p>
+                <div style="display: flex; gap: 8px; margin-top: 12px;">
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">Frontend</span>
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">React</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div style="background: #fef08a; color: #92400e; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 8px;">In Progress</div>
+            <div style="font-size: 12px; color: var(--gray);">Assigned to: Emma Wilson</div>
+            <div style="font-size: 12px; color: var(--gray);">Due: Feb 18, 2026</div>
+          </div>
+        </div>
+
+        <!-- TASK 5 -->
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease;" class="task-card">
+          <div style="flex: 1;">
+            <div style="display: flex; gap: 12px; align-items: start;">
+              <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer; accent-color: var(--primary);" />
+              <div>
+                <h3 style="margin: 0 0 6px 0; font-size: 16px;">Database Migration to PostgreSQL</h3>
+                <p style="color: var(--gray); font-size: 14px; margin: 0;">Migrate from MongoDB to PostgreSQL and optimize queries</p>
+                <div style="display: flex; gap: 8px; margin-top: 12px;">
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">Database</span>
+                  <span class="tag" style="font-size: 12px; padding: 4px 8px;">High Priority</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: right;">
+            <div style="background: #dbeafe; color: #0c4a6e; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 8px;">Pending</div>
+            <div style="font-size: 12px; color: var(--gray);">Assigned to: Mike Chen</div>
+            <div style="font-size: 12px; color: var(--gray);">Due: Feb 25, 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TeamWork</h3>
+        <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">Build together. Show work. Get hired.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Product</h3>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Teams</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 TeamWork. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

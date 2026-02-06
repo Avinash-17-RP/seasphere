@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Feed - TeamWork</title>
+  <link rel="stylesheet" href="css/enhanced.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">TeamWork</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="feed.html" class="active">Feed</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html" class="btn primary">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- FEED PAGE -->
+  <div style="padding: 40px 20px; background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); min-height: 100vh;">
+    <div class="feed-container">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <h2>Team Activity Feed 📰</h2>
+        <p style="color: var(--gray);">See what teams are building and achieving</p>
+      </div>
+
+      <!-- POST 1 -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="post-author">
+            <div class="post-avatar">AD</div>
+            <div class="post-author-info">
+              <div class="post-author-name">Alpha Dev Squad</div>
+              <div class="post-time">2 hours ago</div>
+            </div>
+          </div>
+          <span class="post-badge achievement">✅ Achievement</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">🎉 Launched Payment Module v2.0</div>
+          <div class="post-description">
+            After 3 weeks of development and testing, we successfully launched the new payment processing module. The new system handles 10x more transactions per second and is fully PCI compliant. Team worked amazing on this!
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">Backend</span>
+            <span class="post-tag">Payment System</span>
+            <span class="post-tag">Node.js</span>
+            <span class="post-tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="post-footer">
+          <div class="post-stats">
+            <span>👍 234 likes</span>
+            <span>💬 18 comments</span>
+            <span>🔗 12 shares</span>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn">👍 Like</button>
+            <button class="action-btn">💬 Comment</button>
+            <button class="action-btn">🔗 Share</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- POST 2 -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="post-author">
+            <div class="post-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">DC</div>
+            <div class="post-author-info">
+              <div class="post-author-name">Design Collective</div>
+              <div class="post-time">4 hours ago</div>
+            </div>
+          </div>
+          <span class="post-badge problem">⚠️ Problem Faced</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">Navigating Complex Design System Challenges</div>
+          <div class="post-description">
+            We faced a critical issue with our design system consistency across platforms. Colors weren't translating correctly from Figma to code. After deep analysis, we discovered the CSS color space issue and implemented a solution using CSS variables and a color transformer script.
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">Design System</span>
+            <span class="post-tag">Figma</span>
+            <span class="post-tag">CSS</span>
+          </div>
+        </div>
+        <div class="post-footer">
+          <div class="post-stats">
+            <span>👍 156 likes</span>
+            <span>💬 23 comments</span>
+            <span>🔗 8 shares</span>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn">👍 Like</button>
+            <button class="action-btn">💬 Comment</button>
+            <button class="action-btn">🔗 Share</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- POST 3 -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="post-author">
+            <div class="post-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">SL</div>
+            <div class="post-author-info">
+              <div class="post-author-name">StartupLabs</div>
+              <div class="post-time">6 hours ago</div>
+            </div>
+          </div>
+          <span class="post-badge solution" style="background: #dbeafe; color: #0284c7;">🔧 Solution</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">How We Optimized Database Queries by 70%</div>
+          <div class="post-description">
+            Database performance was slowing down our app. We implemented query optimization using:
+            • Index optimization for frequently used columns
+            • Query refactoring to reduce N+1 problems
+            • Caching layer with Redis
+            • Database connection pooling
+
+            Result: 70% faster queries, reduced server load, happy customers!
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">Database</span>
+            <span class="post-tag">Performance</span>
+            <span class="post-tag">Redis</span>
+            <span class="post-tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="post-footer">
+          <div class="post-stats">
+            <span>👍 512 likes</span>
+            <span>💬 67 comments</span>
+            <span>🔗 89 shares</span>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn">👍 Like</button>
+            <button class="action-btn">💬 Comment</button>
+            <button class="action-btn">🔗 Share</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- POST 4 -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="post-author">
+            <div class="post-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">MM</div>
+            <div class="post-author-info">
+              <div class="post-author-name">Mobile Masters</div>
+              <div class="post-time">8 hours ago</div>
+            </div>
+          </div>
+          <span class="post-badge achievement">✅ Achievement</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">📱 iOS App Reached 100K Downloads!</div>
+          <div class="post-description">
+            Huge milestone! Our flagship iOS app just crossed 100,000 downloads. Maintained 4.8 star rating and 98% crash-free rate. Thanks to our amazing team and supportive community. Looking forward to version 2.0!
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">iOS</span>
+            <span class="post-tag">Mobile</span>
+            <span class="post-tag">Milestone</span>
+          </div>
+        </div>
+        <div class="post-footer">
+          <div class="post-stats">
+            <span>👍 876 likes</span>
+            <span>💬 145 comments</span>
+            <span>🔗 234 shares</span>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn">👍 Like</button>
+            <button class="action-btn">💬 Comment</button>
+            <button class="action-btn">🔗 Share</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- POST 5 -->
+      <div class="post-card">
+        <div class="post-header">
+          <div class="post-author">
+            <div class="post-avatar" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">AI</div>
+            <div class="post-author-info">
+              <div class="post-author-name">AI Innovators</div>
+              <div class="post-time">10 hours ago</div>
+            </div>
+          </div>
+          <span class="post-badge achievement">✅ Achievement</span>
+        </div>
+        <div class="post-content">
+          <div class="post-title">ML Model Accuracy Improved to 96.5%</div>
+          <div class="post-description">
+            Our recommendation engine now achieves 96.5% accuracy! Through extensive feature engineering, hyperparameter tuning, and ensemble methods, we've built a model that delivers better user experiences and engagement.
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">Machine Learning</span>
+            <span class="post-tag">AI</span>
+            <span class="post-tag">Python</span>
+            <span class="post-tag">TensorFlow</span>
+          </div>
+        </div>
+        <div class="post-footer">
+          <div class="post-stats">
+            <span>👍 345 likes</span>
+            <span>💬 42 comments</span>
+            <span>🔗 56 shares</span>
+          </div>
+          <div class="post-actions">
+            <button class="action-btn">👍 Like</button>
+            <button class="action-btn">💬 Comment</button>
+            <button class="action-btn">🔗 Share</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOAD MORE BUTTON -->
+      <div style="text-align: center; margin-top: 40px;">
+        <button class="btn secondary">Load More Posts</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TeamWork</h3>
+        <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">Build together. Show work. Get hired.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Product</h3>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Teams</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 TeamWork. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

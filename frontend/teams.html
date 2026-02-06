@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Teams - TeamWork</title>
+  <link rel="stylesheet" href="css/enhanced.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">TeamWork</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html" class="active">Teams</a></li>
+      <li><a href="feed.html">Feed</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html" class="btn primary">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <!-- TEAMS PAGE -->
+  <div style="padding: 60px 40px;">
+    <div class="section-title">
+      <h2>Explore Teams 🌟</h2>
+      <p>Discover talented teams doing amazing work</p>
+    </div>
+
+    <!-- SEARCH & FILTERS -->
+    <div style="background: var(--white); padding: 32px; border-radius: var(--radius-lg); margin-bottom: 40px; box-shadow: var(--shadow);">
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+        <input type="text" class="form-input" placeholder="Search teams..." />
+        <select class="form-select">
+          <option>All Skills</option>
+          <option>Web Dev</option>
+          <option>Mobile</option>
+          <option>AI/ML</option>
+          <option>Design</option>
+          <option>Backend</option>
+        </select>
+        <select class="form-select">
+          <option>Sort by Score ↓</option>
+          <option>Most Recent</option>
+          <option>Most Tasks</option>
+          <option>Best Rated</option>
+        </select>
+      </div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="btn outline" style="padding: 8px 16px; font-size: 14px;">Web Dev</button>
+        <button class="btn outline" style="padding: 8px 16px; font-size: 14px;">React</button>
+        <button class="btn outline" style="padding: 8px 16px; font-size: 14px;">Full Stack</button>
+        <button class="btn outline" style="padding: 8px 16px; font-size: 14px;">Backend</button>
+        <button class="btn outline" style="padding: 8px 16px; font-size: 14px;">✕ Clear</button>
+      </div>
+    </div>
+
+    <!-- TEAMS GRID -->
+    <div class="team-grid">
+      <!-- TEAM CARD 1 -->
+      <div class="team-card">
+        <div class="team-banner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+        <div class="team-info">
+          <div class="team-name">🔥 Alpha Dev Squad</div>
+          <div class="team-score">
+            <span class="score-badge">⭐ 95/100</span>
+            <span class="score-badge">✅ 47</span>
+          </div>
+          <div class="team-members">👥 5 members • 8 months active</div>
+          <div class="team-tags">
+            <span class="tag">Web Dev</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+          </div>
+          <p style="color: var(--gray); font-size: 13px; margin: 12px 0;">Building high-quality web applications with cutting-edge tech stack. Specialized in full-stack development.</p>
+          <div class="team-action">
+            <a href="team-profile.html" class="btn outline">View Profile</a>
+            <a href="#" class="btn primary">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM CARD 2 -->
+      <div class="team-card">
+        <div class="team-banner" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+        <div class="team-info">
+          <div class="team-name">🎨 Design Collective</div>
+          <div class="team-score">
+            <span class="score-badge">⭐ 92/100</span>
+            <span class="score-badge">✅ 38</span>
+          </div>
+          <div class="team-members">👥 4 members • 6 months active</div>
+          <div class="team-tags">
+            <span class="tag">UI/UX</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Branding</span>
+          </div>
+          <p style="color: var(--gray); font-size: 13px; margin: 12px 0;">Award-winning design team creating beautiful and functional digital experiences for global brands.</p>
+          <div class="team-action">
+            <a href="team-profile.html" class="btn outline">View Profile</a>
+            <a href="#" class="btn primary">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM CARD 3 -->
+      <div class="team-card">
+        <div class="team-banner" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+        <div class="team-info">
+          <div class="team-name">🚀 StartupLabs</div>
+          <div class="team-score">
+            <span class="score-badge">⭐ 88/100</span>
+            <span class="score-badge">✅ 32</span>
+          </div>
+          <div class="team-members">👥 6 members • 4 months active</div>
+          <div class="team-tags">
+            <span class="tag">Full Stack</span>
+            <span class="tag">AI</span>
+            <span class="tag">Mobile</span>
+          </div>
+          <p style="color: var(--gray); font-size: 13px; margin: 12px 0;">Innovative startup team focused on AI-powered solutions and mobile-first applications.</p>
+          <div class="team-action">
+            <a href="team-profile.html" class="btn outline">View Profile</a>
+            <a href="#" class="btn primary">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM CARD 4 -->
+      <div class="team-card">
+        <div class="team-banner" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+        <div class="team-info">
+          <div class="team-name">📱 Mobile Masters</div>
+          <div class="team-score">
+            <span class="score-badge">⭐ 90/100</span>
+            <span class="score-badge">✅ 41</span>
+          </div>
+          <div class="team-members">👥 5 members • 7 months active</div>
+          <div class="team-tags">
+            <span class="tag">iOS</span>
+            <span class="tag">Android</span>
+            <span class="tag">Flutter</span>
+          </div>
+          <p style="color: var(--gray); font-size: 13px; margin: 12px 0;">Expert mobile development team creating cross-platform apps for startups and enterprises.</p>
+          <div class="team-action">
+            <a href="team-profile.html" class="btn outline">View Profile</a>
+            <a href="#" class="btn primary">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM CARD 5 -->
+      <div class="team-card">
+        <div class="team-banner" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+        <div class="team-info">
+          <div class="team-name">🤖 AI Innovators</div>
+          <div class="team-score">
+            <span class="score-badge">⭐ 87/100</span>
+            <span class="score-badge">✅ 28</span>
+          </div>
+          <div class="team-members">👥 4 members • 5 months active</div>
+          <div class="team-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Python</span>
+            <span class="tag">Data Science</span>
+          </div>
+          <p style="color: var(--gray); font-size: 13px; margin: 12px 0;">Specialized in ML and data science solutions for complex business problems.</p>
+          <div class="team-action">
+            <a href="team-profile.html" class="btn outline">View Profile</a>
+            <a href="#" class="btn primary">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM CARD 6 -->
+      <div class="team-card">
+        <div class="team-banner" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+        <div class="team-info">
+          <div class="team-name">💼 Enterprise Solutions</div>
+          <div class="team-score">
+            <span class="score-badge">⭐ 93/100</span>
+            <span class="score-badge">✅ 52</span>
+          </div>
+          <div class="team-members">👥 7 members • 10 months active</div>
+          <div class="team-tags">
+            <span class="tag">Enterprise</span>
+            <span class="tag">DevOps</span>
+            <span class="tag">Cloud</span>
+          </div>
+          <p style="color: var(--gray); font-size: 13px; margin: 12px 0;">Building scalable enterprise solutions with focus on cloud infrastructure and DevOps.</p>
+          <div class="team-action">
+            <a href="team-profile.html" class="btn outline">View Profile</a>
+            <a href="#" class="btn primary">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div style="text-align: center; margin-top: 60px;">
+      <div style="display: inline-flex; gap: 8px; margin-bottom: 32px;">
+        <button class="btn outline" style="padding: 8px 12px;">←</button>
+        <button class="btn primary" style="padding: 8px 12px;">1</button>
+        <button class="btn outline" style="padding: 8px 12px;">2</button>
+        <button class="btn outline" style="padding: 8px 12px;">3</button>
+        <button class="btn outline" style="padding: 8px 12px;">→</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>TeamWork</h3>
+        <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">Build together. Show work. Get hired.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Product</h3>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Teams</a>
+      </div>
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 TeamWork. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
